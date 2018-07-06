@@ -1,0 +1,66 @@
+{
+	"name": "webpack4",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "webpack-dev-server  --config webpack.dev.js",
+		"build": "webpack --config webpack.prod.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"clientBundleOutputDir": "./dist",
+	"publicPath": "",
+	"entryPoints": [
+		{
+			"chunkName": "cssorderproblem",
+			"entryPoint": "./src/apps/alvin/boot.tsx",
+			"htmlTemplateFile": "./src/apps/alvin/index_template.html",
+			"htmlOutputFile": "./dist/index.html"
+		}
+	],
+	"devDependencies": {
+		"@types/material-ui": "^0.21.3",
+		"autoprefixer": "^8.6.4",
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.4",
+		"babel-plugin-syntax-dynamic-import": "^6.18.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"clean-webpack-plugin": "^0.1.19",
+		"core-js": "^2.5.7",
+		"css-loader": "^0.28.11",
+		"extract-text-webpack-plugin": "^4.0.0-beta.0",
+		"file-loader": "^1.1.11",
+		"html-webpack-plugin": "^4.0.0-alpha",
+		"mini-css-extract-plugin": "^0.4.1",
+		"postcss-loader": "^2.1.5",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1",
+		"react-hot-loader": "^4.3.3",
+		"style-loader": "^0.21.0",
+		"ts-loader": "^4.4.2",
+		"typescript": "^2.9.2",
+		"webpack": "^4.15.1",
+		"webpack-bundle-analyzer": "^2.13.1",
+		"webpack-cli": "^3.0.8",
+		"webpack-dev-server": "^3.1.4",
+		"webpack-merge": "^4.1.3",
+		"write-file-webpack-plugin": "^4.3.2"
+	},
+	"dependencies": {
+		"@material-ui/core": "^1.3.1",
+		"@material-ui/icons": "^1.1.0",
+		"@types/react": "^16.4.6",
+		"@types/react-dom": "^16.0.6",
+		"@types/react-router": "^4.0.28",
+		"@types/react-router-dom": "^4.2.7",
+		"axios": "^0.18.0",
+		"bootstrap": "^4.1.1",
+		"es6-promise": "^4.2.4",
+		"intersection-observer": "^0.5.0",
+		"jquery": "^3.3.1",
+		"popper.js": "^1.12.9",
+		"react-loadable": "^5.4.0",
+		"react-router-dom": "^4.3.1"
+	}
+}

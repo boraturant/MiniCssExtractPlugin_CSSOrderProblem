@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <title>React App</title>
+    <% for (var chunk in htmlWebpackPlugin.files.css) { %>
+        <link href="<%= htmlWebpackPlugin.files.css[chunk].path %>" rel="stylesheet" />
+        <% } %>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div style="text-align:center">Loading...</div>
+    </div>
+    <% for (var chunk in htmlWebpackPlugin.files.js) { %>
+        <script src="<%= htmlWebpackPlugin.files.js[chunk].path %>"></script>
+        <% } %>
+
+</body>
+
+</html>
